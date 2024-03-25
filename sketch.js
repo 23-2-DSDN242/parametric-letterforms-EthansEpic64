@@ -13,9 +13,9 @@ const canvasHeight = 500;
  */
 
 const letterA = {
-  "size": 80,
-  "offsetx": 0,
-  "offsety": 35
+  "size": 40,
+  "offsetx": 55,
+  "offsety": 30
 }
 
 const letterB = {
@@ -26,14 +26,14 @@ const letterB = {
 
 const letterC = {
   "size": 100,
-  "offsetx": 30,
-  "offsety": 0
+  "offsetx": 50,
+  "offsety": 20
 }
 
-const backgroundColor  = "#acf2e7";
+const backgroundColor  = "#700707";
 
-const darkGreen  = "#26b29d";
-const lightGreen  = "#30dfc4";
+const darkred  = "#b51919";
+const lightred  = "#f20a0a";
 const strokeColor  = "#0a2d27";
 
 function setup () {
@@ -70,10 +70,10 @@ function drawLetter(posx, posy, letterData) {
   let pos2y = posy + letterData["offsety"];
 
   // draw two circles
-  fill(darkGreen);
-  ellipse(posx, posy, 150, 150);
-  fill(lightGreen);
-  ellipse(pos2x, pos2y, size2, size2);
+  fill(darkred);
+  rect(posx-75, posy-75, 150, 150);
+  fill(lightred);
+  rect(pos2x-75, pos2y-75, size2, size2);
 }
 
 function keyTyped() {
