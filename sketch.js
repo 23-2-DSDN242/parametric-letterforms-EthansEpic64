@@ -69,10 +69,15 @@ function drawLetter(posx, posy, letterData) {
   let pos2x = posx + letterData["offsetx"];
   let pos2y = posy + letterData["offsety"];
 
-  stroke(darkred);
+  stroke(lightred);
+  line(posx-60,posy-20,posx,posy+40);
   line(posx-40,posy-40,posx+20,posy+20);
-  line(posx,posy-40,posx+60,posy+20);
-  line(posx+40,posy-40,posx+100,posy+20);
+  line(posx-20,posy-60,posx+40,posy);
+  line(posx,posy-80,posx+60,posy-20);
+  line(posx-60,posy-20,posx,posy-80);
+  line(posx,posy+40,posx+60,posy-20);
+  line(posx+20,posy-60,posx-40,posy);
+  line(posx+40,posy-40,posx-20,posy+20);
 }
 
 function keyTyped() {
