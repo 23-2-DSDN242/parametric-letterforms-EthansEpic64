@@ -26,8 +26,8 @@ const letterB = {
 
 const letterC = {
   "size": 100,
-  "offsetx": 50,
-  "offsety": 20
+  "offsetx": 10,
+  "offsety": 50
 }
 
 const backgroundColor  = "#700707";
@@ -69,11 +69,10 @@ function drawLetter(posx, posy, letterData) {
   let pos2x = posx + letterData["offsetx"];
   let pos2y = posy + letterData["offsety"];
 
-  // draw two circles
-  fill(darkred);
-  rect(posx-75, posy-75, 150, 150);
-  fill(lightred);
-  rect(pos2x-75, pos2y-75, size2, size2);
+  stroke(darkred);
+  line(posx-40,posy-40,posx+20,posy+20);
+  line(posx,posy-40,posx+60,posy+20);
+  line(posx+40,posy-40,posx+100,posy+20);
 }
 
 function keyTyped() {
