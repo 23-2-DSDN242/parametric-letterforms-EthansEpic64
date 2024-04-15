@@ -1,5 +1,6 @@
 const canvasWidth = 960;
 const canvasHeight = 500;
+//const cube = 27.5;
 
 /*
  * my three variable per letter are:
@@ -13,21 +14,24 @@ const canvasHeight = 500;
  */
 
 const letterA = {
-  "size": 40,
-  "offsetx": 55,
-  "offsety": 30
+  "coverx": 0,
+  "covery": 0,
+  "sizex": 60,
+  "sizey": 20
 }
 
 const letterB = {
-  "size": 150,
-  "offsetx": 0,
-  "offsety": -145
+  "coverx": 0,
+  "covery": 0,
+  "sizex": 60,
+  "sizey": 60
 }
 
 const letterC = {
-  "size": 100,
-  "offsetx": 10,
-  "offsety": 50
+  "coverx": 0,
+  "covery": 0,
+  "sizex": 20,
+  "sizey": 20
 }
 
 const backgroundColor  = "#700707";
@@ -40,7 +44,7 @@ function setup () {
   // create the drawing canvas, save the canvas element
   main_canvas = createCanvas(canvasWidth, canvasHeight);
   main_canvas.parent('canvasContainer');
-
+  angleMode(DEGREES)
   // color/stroke setup
   stroke(strokeColor);
   strokeWeight(4);
@@ -65,9 +69,11 @@ function draw () {
 
 function drawLetter(posx, posy, letterData) {
   // determine parameters for second circle
-  let size2 = letterData["size"];
-  let pos2x = posx + letterData["offsetx"];
-  let pos2y = posy + letterData["offsety"];
+  let pos2x = letterData["coverx"];
+  let pos2y = letterData["covery"];
+  let pos3x = letterData["sizex"];
+  let pos3y = letterData["sizey"];
+
 
   stroke(lightred);
   line(posx-60,posy-20,posx,posy+40);
@@ -78,6 +84,32 @@ function drawLetter(posx, posy, letterData) {
   line(posx,posy+40,posx+60,posy-20);
   line(posx+20,posy-60,posx-40,posy);
   line(posx+40,posy-40,posx-20,posy+20);
+
+
+  push()
+  stroke(255)
+  translate(posx, posy)
+  line(pos2x,pos2y,pos3x,pos3y);
+  //line(pos2x-60,pos2y-20,pos2x,pos2y-80);
+  //line(pos2x,pos2y+40,pos2x+60,pos2y-20);
+  //rotate(45)
+  //rect(pos2x,pos2y,size2x,size2y);
+  pop()
+  // function seg1() {
+  //   line(posx,posy-80,posx+20,posy-60);
+  // };
+
+  // function seg2() {
+  //   line(posx,posy-80,posx-20,posy-60);
+  // };
+
+  // stroke(0);
+  // if (drawseg1 == 1){
+  //   seg1();
+  // };
+  // if (drawseg2 == 1){
+  //   seg2();
+  // };
 }
 
 function keyTyped() {
