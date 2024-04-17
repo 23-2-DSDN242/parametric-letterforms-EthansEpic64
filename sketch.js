@@ -23,8 +23,8 @@ const letterA = {
 const letterB = {
   "coverx": 0,
   "covery": 0,
-  "sizex": 60,
-  "sizey": 60
+  "sizex": -20,
+  "sizey": -20
 }
 
 const letterC = {
@@ -90,26 +90,7 @@ function drawLetter(posx, posy, letterData) {
   stroke(255)
   translate(posx, posy)
   line(pos2x,pos2y,pos3x,pos3y);
-  //line(pos2x-60,pos2y-20,pos2x,pos2y-80);
-  //line(pos2x,pos2y+40,pos2x+60,pos2y-20);
-  //rotate(45)
-  //rect(pos2x,pos2y,size2x,size2y);
   pop()
-  // function seg1() {
-  //   line(posx,posy-80,posx+20,posy-60);
-  // };
-
-  // function seg2() {
-  //   line(posx,posy-80,posx-20,posy-60);
-  // };
-
-  // stroke(0);
-  // if (drawseg1 == 1){
-  //   seg1();
-  // };
-  // if (drawseg2 == 1){
-  //   seg2();
-  // };
 }
 
 function keyTyped() {
