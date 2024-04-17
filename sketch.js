@@ -14,10 +14,10 @@ const canvasHeight = 500;
  */
 
 const letterA = {
-  "coverx": 0,
-  "covery": 0,
-  "sizex": 60,
-  "sizey": 20
+  "coverx": -60,
+  "covery": -20,
+  "sizex": 0,
+  "sizey": 40,
 }
 
 const letterB = {
@@ -47,7 +47,7 @@ function setup () {
   angleMode(DEGREES)
   // color/stroke setup
   stroke(strokeColor);
-  strokeWeight(4);
+  strokeWeight(5);
 
   // with no animation, redrawing the screen is not necessary
   noLoop();
