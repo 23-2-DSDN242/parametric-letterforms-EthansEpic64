@@ -36,8 +36,10 @@ function drawLetter(letterData) {
   line(30,65,linelen2,linelen2+35);
   line(15,80,linelen3,linelen3+65);
   line(0,95,linelen4,linelen4+95);
-  line(45,50,linelen5,linelen5+45);
-  line(95,100,linelen8,linelen8+95);
+  line(45,50,-linelen5+45,linelen5+50);
+  line(60,65,-linelen6+60,linelen6+65);
+  line(75,80,-linelen7+75,linelen7+80);
+  line(90,95,-linelen8+90,linelen8+95);
 } 
 
 function interpolate_letter(percent, oldObj, newObj) {
