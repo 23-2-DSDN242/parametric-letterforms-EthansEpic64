@@ -29,10 +29,10 @@ function drawLetter(letterData) {
 
   // draw lines
   line(50,50,linelen1,linelen1);
-  line(30,65,linelen2,linelen2+35);
-  line(80,85,linelen3,linelen3+75);
-  line(20,80,linelen4,linelen4+80);
-}
+  line(32,65,linelen2,linelen2+33);
+  line(16,80,linelen3,linelen3+64);
+  line(0,95,linelen4,linelen4+95);
+} 
 
 function interpolate_letter(percent, oldObj, newObj) {
   let new_letter = {};
