@@ -22,9 +22,9 @@ function drawLetter(letterData) {
   strokeWeight(4);
 
   // determine parameters for lines
-  let linelen1 = letterData["size"];
-  let linelen2 = letterData["offsetx"];
-  let linelen3 = letterData["offsety"];
+  let linelen1 = letterData["line1"];
+  let linelen2 = letterData["line2"];
+  let linelen3 = letterData["line3"];
   let linelen4 = letterData["line4"];
   let linelen5 = letterData["line5"];
   let linelen6 = letterData["line6"];
@@ -44,9 +44,9 @@ function drawLetter(letterData) {
 
 function interpolate_letter(percent, oldObj, newObj) {
   let new_letter = {};
-  new_letter["size"]    = map(percent, 0, 100, oldObj["size"], newObj["size"]);
-  new_letter["offsetx"] = map(percent, 0, 100, oldObj["offsetx"], newObj["offsetx"]);
-  new_letter["offsety"] = map(percent, 0, 100, oldObj["offsety"], newObj["offsety"]);
+  new_letter["line1"]    = map(percent, 0, 100, oldObj["line1"], newObj["line1"]);
+  new_letter["line2"] = map(percent, 0, 100, oldObj["line2"], newObj["line2"]);
+  new_letter["line3"] = map(percent, 0, 100, oldObj["line3"], newObj["line3"]);
   new_letter["line4"] = map(percent, 0, 100, oldObj["line4"], newObj["line4"]);
   new_letter["line5"] = map(percent, 0, 100, oldObj["line5"], newObj["line5"]);
   new_letter["line6"] = map(percent, 0, 100, oldObj["line6"], newObj["line6"]);
