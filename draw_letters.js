@@ -1,6 +1,6 @@
 /* these are optional special variables which will change the system */
 var systemBackgroundColor = "#700707";
-var systemLineColor = "#000000";
+var systemLineColor = "#800d0b";
 var systemBoxColor = "#C73869";
 
 /* internal constants */
@@ -17,9 +17,20 @@ const strokeColor  = "#0a2d27";
  * from (0,0) to (100, 200)
  */
 function drawLetter(letterData) {
+  stroke(92, 2, 1);
+  strokeWeight(4);
+  
+  line(45,50,90,95);
+  line(30,65,75,75+35);
+  line(15,80,60,60+65);
+  line(0,95,45,45+95);
+  line(45,50,-45+45,45+50);
+  line(60,65,-45+60,45+65);
+  line(75,80,-45+75,45+80);
+  line(90,95,-45+90,45+95);
+ 
   // color/stroke setup
   stroke(255);
-  strokeWeight(4);
 
   // determine parameters for lines
   let linelen1 = letterData["line1"];
@@ -56,7 +67,8 @@ function interpolate_letter(percent, oldObj, newObj) {
 }
 
 var swapWords = [
-  "ABBAABBA",
-  "CAB?CAB?",
-  "BAAAAAAA"
+  "GRIDLINE",
+  "ANTONYMS",
+  "CRAFTING",
+  "FOOTBALL"
 ]

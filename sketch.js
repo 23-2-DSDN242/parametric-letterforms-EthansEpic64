@@ -14,7 +14,7 @@ const canvasHeight = 500;
  */
 
 const letterA = {
-  "coverx": -60,
+  "coverx": 190,
   "covery": -20,
   "sizex": 0,
   "sizey": 40,
@@ -85,12 +85,8 @@ function drawLetter(posx, posy, letterData) {
   line(posx+20,posy-60,posx-40,posy);
   line(posx+40,posy-40,posx-20,posy+20);
 
-
-  push()
-  stroke(255)
-  translate(posx, posy)
-  line(pos2x,pos2y,pos3x,pos3y);
-  pop()
+  stroke(255);
+  line(posx,posy-80,pos2x,pos2x+80);
 }
 
 function keyTyped() {
