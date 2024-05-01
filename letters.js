@@ -1,5 +1,5 @@
-const alphabet = {
-  "default": {
+const alphabet = { //My font is a bit inconsitent as far as captilization goes, I made the capatilization of each letter different depending on what was easiest to draw with my constraints
+  "default": { //it is the half way point of all of the parameters, it makes a pretty cool shape
     "line1": 67.5,
     "line2": 52.5,
     "line3": 37.5,
@@ -39,7 +39,7 @@ const alphabet = {
     "line7": 0,
     "line8": 0
   },
-  "D": {
+  "D": { //definitely one of the weaker letters, it looks an awful lot like an O or what most would think is a 0
     "line1": 75,
     "line2": 30,
     "line3": 15,
@@ -109,7 +109,7 @@ const alphabet = {
     "line7": 0,
     "line8": 0
   },
-  "K": {
+  "K": { //this one was always going to be hard so im kind of happy with how it turned out, it doesnt look like any other letters thank goodness
     "line1": 45,
     "line2": 45,
     "line3": 40,
@@ -189,7 +189,7 @@ const alphabet = {
     "line7": 0,
     "line8": 0
   },
-  "S": {
+  "S": { //this one was very hard due to not being able to do 2 lines on the same grid column
     "line1": 90,
     "line2": 75,
     "line3": 60,
@@ -259,7 +259,7 @@ const alphabet = {
     "line7": 45,
     "line8": 0
   },
-  "Z": {
+  "Z": { //this one was very hard due to not being able to do 2 lines on the same grid column, easy to be confused with Z
     "line1": 90,
     "line2": 30,
     "line3": 15,
@@ -270,7 +270,7 @@ const alphabet = {
     "line8": 45
   },
   "0": {
-    "line1": 45,
+    "line1": 45, //minimum of all the parameters
     "line2": 30,
     "line3": 15,
     "line4": 0,
@@ -279,7 +279,7 @@ const alphabet = {
     "line7": 0,
     "line8": 0
   },
-  "1": {
+  "1": { //rather than make it look like the numbers in english, I took advantage of my grid having 9 squares and the numbers instead represented by how many square in the grid are being drawn
     "line1": 60,
     "line2": 45,
     "line3": 15,
@@ -360,7 +360,7 @@ const alphabet = {
     "line8": 30
   },
   "9": {
-    "line1": 90,
+    "line1": 90, //full grid
     "line2": 75,
     "line3": 60,
     "line4": 45,

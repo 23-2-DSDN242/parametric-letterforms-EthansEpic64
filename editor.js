@@ -5,17 +5,18 @@
  * ["object_field", minimum_bound, maximum_bound]
  */
 const sliderInfo = [
-  ["line1",   45, 90],
-  ["line2",  30, 75],
-  ["line3", 15, 60],
-  ["line4", 0, 45],
-  ["line5", 0,45],
-  ["line6",0,45],
-  ["line7",0,45],
-  ["line8",0,45]
+  ["line1",   45, 90], //controls the top left to right line
+  ["line2",  30, 75], //controls the second left to right line
+  ["line3", 15, 60], //controls the third left to right line
+  ["line4", 0, 45], //controls the bottom left to right line
+  ["line5", 0,45], //controls the top right to left line
+  ["line6",0,45], //controls the second right to left line
+  ["line7",0,45], //controls the third right to left line
+  ["line8",0,45] //controls the bottom right to left line
 ];
 
 // PROBABLY DON'T NEED TO EDIT ANYTHING ELSE. STOP HERE.
+// okay :)
 
 const numSliders = sliderInfo.length;
 
